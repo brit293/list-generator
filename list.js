@@ -4,7 +4,7 @@ const input = document.querySelector('input');
 const taskList = document.getElementById('task-list');
 
 let taskId = 0;
-let randomImgid = 1; 
+let randomImgId = 1; 
 
 //Add new task
 const addTask = (task) => {
@@ -47,7 +47,7 @@ taskList.addEventListener('click', (e) => {
         } else {
             label.classList.remove('text-decoration-line-through');
         }
-    } else if (target.matches('btn-close')) {
+    } else if (target.matches('.btn-close')) {
         const taskId = target.getAttribute('data-task-id');
         removeTask(taskId);
     }
